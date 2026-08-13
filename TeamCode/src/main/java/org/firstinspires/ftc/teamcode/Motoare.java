@@ -24,15 +24,16 @@ public class Motoare {
             sf.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
             ss.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
-            df.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-            ds.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-            sf.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-            ss.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+
 
 
             ss.setDirection(DcMotorSimple.Direction.REVERSE);
             df.setDirection(DcMotorSimple.Direction.REVERSE);
 
+            df.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+            ds.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+            sf.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+            ss.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
         }
 

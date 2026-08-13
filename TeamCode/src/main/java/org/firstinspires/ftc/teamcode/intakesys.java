@@ -35,13 +35,18 @@ public class intakesys {
         })) ;
         cases.put(() -> intakestate == 1,instant(()->{
             t.setmode(Tavalug.Mode.COLLECT);
-            i.cpower1();
+            i.power1();
             p.setmode(Powerramp.Mode.COLLECT);
         })) ;
         cases.put(() -> intakestate == 2,instant(()->{
             t.setmode(Tavalug.Mode.COLLECT);
             i.powercurtom(-0.7);
             p.setmode(Powerramp.Mode.COLLECT);
+        })) ;
+        cases.put(() -> intakestate == 3,instant(()->{
+            t.setmode(Tavalug.Mode.UP);
+            i.power1();
+            p.setmode(Powerramp.Mode.PUSH);
         })) ;
         intake = branch(cases);
     }
