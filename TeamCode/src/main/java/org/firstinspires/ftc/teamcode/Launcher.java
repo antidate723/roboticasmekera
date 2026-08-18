@@ -61,6 +61,9 @@ public class Launcher {
             l2.setPower(-1);
         }
 
+        if(pid_ctr.getTargetPosition()<100)
+        {l1.setPower(0);
+            l2.setPower(0);}
 
 
     }}

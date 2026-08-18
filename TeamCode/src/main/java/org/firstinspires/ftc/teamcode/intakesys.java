@@ -20,7 +20,9 @@ public class intakesys {
     private Command intake;
 
 
-
+    public int getIntakestate() {
+        return intakestate;
+    }
 
     public intakesys(HardwareMap hardwaremap){
         p = new Powerramp(hardwaremap);

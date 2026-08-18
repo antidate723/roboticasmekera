@@ -11,6 +11,7 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 @Configurable
 public class Tureta {
     DcMotor tureta;
+
     public static PIDFCoefficients pid = new PIDFCoefficients(0.02,0,0.0019,0);
     public static PIDFController pid_ctr;
 
